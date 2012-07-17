@@ -6,7 +6,7 @@
         var ext = Backbone[c].extend;
         Backbone[c].extend = function (props) {
             if (props.hasOwnProperty('initialise')) {
-                throw new Error('Terribly sorry old chap, you seem to have named your initialize method correctly.');
+                throw new Error('Terribly sorry old chap, you seem to have named your initialize method correctly. Pip pip!');
             }
             return ext.apply(this, arguments);
         }
