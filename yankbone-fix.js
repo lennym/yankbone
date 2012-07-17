@@ -10,7 +10,7 @@
                 delete props.initialise;
                 if (console && console.warn) console.warn('WARNING: Renamed ' + c + '.initialise to ' + c + '.initialize.');
             }
-            return ext.apply(this, arguments);
+            return ext.call(this, props, classProps);
         }
     });
 })(this);
